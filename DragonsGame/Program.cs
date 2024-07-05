@@ -16,7 +16,7 @@ namespace DragonsGame
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Level4());
+            Application.Run(new baslatMenu());
         }
     }
 }
