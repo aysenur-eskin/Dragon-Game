@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EDABFAEF-47DC-4B9D-8FE5-ADBB90FCEEBE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DragonsGame</RootNamespace>
+    <AssemblyName>DragonsGame</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Level4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level4.Designer.cs">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level1.Designer.cs">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level2.Designer.cs">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level3.Designer.cs">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baslatMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baslatMenu.Designer.cs">
+      <DependentUpon>baslatMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Level4.resx">
+      <DependentUpon>Level4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level1.resx">
+      <DependentUpon>Level1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level2.resx">
+      <DependentUpon>Level2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level3.resx">
+      <DependentUpon>Level3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baslatMenu.resx">
+      <DependentUpon>baslatMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arkaplan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background3.jpg" />
+    <None Include="Resources\screenshot 4.png" />
+    <None Include="Resources\background4.jpg" />
+    <None Include="Resources\background5.jpg" />
+    <None Include="Resources\background5_1.jpg" />
+    <None Include="Resources\parallax-background-design-vector.jpg" />
+    <None Include="Resources\arkaplan1.jpg" />
+    <None Include="Resources\d1.jpg" />
+    <None Include="Resources\bg1.jpg" />
+    <None Include="Resources\background5.png" />
+    <None Include="Resources\bg4.png" />
+    <None Include="Resources\bina_1.png" />
+    <None Include="Resources\denem1.png" />
+    <None Include="Resources\background1.png" />
+    <None Include="Resources\background11.png" />
+    <None Include="Resources\1 %281%29.png" />
+    <Content Include="Resources\dragon2.png" />
+    <None Include="Resources\dragon21.png" />
+    <None Include="Resources\dragon3_1.png" />
+    <None Include="Resources\dragon3_11.png" />
+    <None Include="Resources\ejderha2.png" />
+    <None Include="Resources\form1arkaplanı.png" />
+    <None Include="Resources\spooky background for platfrom game.png" />
+    <None Include="Resources\spooky background for platfrom game1.png" />
+    <None Include="Resources\spooky background for platfrom game2.png" />
+    <None Include="Resources\spooky background for platfrom game3.png" />
+    <None Include="Resources\Untitled Project.jpg" />
+    <None Include="Resources\Untitled Project %281%29.jpg" />
+    <None Include="Resources\Untitled Project %282%29.jpg" />
+    <None Include="Resources\Untitled Project %283%29.jpg" />
+    <None Include="Resources\ev18.png" />
+    <None Include="Resources\ev19.png" />
+    <None Include="Resources\ev20.png" />
+    <None Include="Resources\ev21.png" />
+    <None Include="Resources\ev22.png" />
+    <None Include="Resources\ev23.png" />
+    <None Include="Resources\ev24.png" />
+    <None Include="Resources\ev25.png" />
+    <None Include="Resources\ev26.png" />
+    <None Include="Resources\ev27.png" />
+    <None Include="Resources\ev28.jpg" />
+    <None Include="Resources\ev29.jpg" />
+    <None Include="Resources\ev281.jpg" />
+    <None Include="Resources\ev291.jpg" />
+    <Content Include="ses\levelup.wav" />
+    <None Include="Resources\background2.jpg" />
+    <Content Include="ses\dead.wav" />
+    <Content Include="ses\Jump.mp3" />
+    <Content Include="ses\jump.wav" />
+    <Content Include="ses\Jump2.mp3" />
+    <Content Include="ses\jump2.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
